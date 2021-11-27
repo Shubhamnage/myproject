@@ -1,11 +1,11 @@
 public void sample(){
 
-system.setpropertis("webdriver.chrome.driver","Cp.Driverpath");
+system.setproperty("webdriver.chrome.driver","Cp.Driverpath");
 WebDriver w=new ChromeDriver();
 w.manage().window().maxi();
 w.get(Cp.fb)
 
-File s=((TakeInputScreenshot)w).getScreenShot(OutPutType.FILE);
+File s=((TakeScreenshot)w).getScreenShotAs(OutPutType.FILE);
 Date d=new Date();
 String File=d.toString().Replace(";","-");
 File F=new File(Cp.Screenshot+F+"Shubham"+".png");
